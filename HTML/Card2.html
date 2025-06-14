@@ -114,6 +114,83 @@ footer {
     margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .inventario {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+  }
+
+  .card h2 {
+    font-size: 1.6em;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+}
+
+/* Responsivo para pantallas grandes (≥ 1024px) */
+@media (min-width: 1024px) {
+  .inventario {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 30px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  table th, table td {
+    padding: 14px 18px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (≤ 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .inventario {
+    padding: 20px 10px;
+  }
+
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  table th, table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header p {
+    font-size: 0.95em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -149,22 +226,22 @@ footer {
                     <tr>
                         <td>Pastura</td>
                         <td>5000 kg</td>
-                        <td>01/11/2024</td>
+                        <td>01/02/2025</td>
                     </tr>
                     <tr>
                         <td>Suplemento Mineral</td>
                         <td>800 kg</td>
-                        <td>01/11/2024</td>
+                        <td>01/02/2025</td>
                     </tr>
                     <tr>
                         <td>Alfalfa</td>
                         <td>1500 kg</td>
-                        <td>01/11/2024</td>
+                        <td>01/02/2025</td>
                     </tr>
                     <tr>
                         <td>Concentrado Especial</td>
                         <td>1200 kg</td>
-                        <td>01/11/2024</td>
+                        <td>01/02/2025</td>
                     </tr>
                 </tbody>
             </table>
@@ -255,7 +332,7 @@ footer {
     </main>
 
     <footer>
-        <p>Inventario actualizado al 01/11/2024 | Proyecto de Ingeniería de Sistemas</p>
+        <p>Inventario actualizado al 10/06/2025 | Proyecto de Ingeniería de Sistemas</p>
     </footer>
     <script src="https://kit.fontawesome.com/f1b2ade254.js" crossorigin="anonymous"></script>
 </body>
