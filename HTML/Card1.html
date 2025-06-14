@@ -177,8 +177,99 @@ form button {
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 10px 20px;
+    }
 
+    .card {
+        width: 45%;
+        height: auto;
+        min-height: 500px;
+    }
 
+    .card img {
+        height: 120px;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+}
+
+/* Responsivo para móviles (pantallas <= 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 5px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .card img {
+        height: 100px;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input, select, form button {
+        font-size: 14px;
+    }
+}
+
+/* Extras para pantallas muy pequeñas (<= 480px) */
+@media (max-width: 480px) {
+    .nav-link {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .card {
+        width: 95%;
+        min-height: 400px;
+    }
+
+    .card h3 {
+        font-size: 0.95em;
+    }
+
+    .card img {
+        height: 80px;
+    }
+
+    form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input, select {
+        padding: 6px;
+    }
+}
     </style>
 </head>
 <body>
