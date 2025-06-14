@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Inventario</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+        .header {
+            background-color: #ff0000;
+            padding: 20px;
+            display: block;
+            position:fixed;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+    
+        .nav-link{
+            color: rgb(0, 0, 0);
+        }
+        .nav-link {
+            margin: 0 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+        }
+        
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1em;
+}
+
+.inventario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h2 {
+    color: #000000;
+    font-size: 1.5em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-cogs"></i>
+            <span class="ml-2">Ganotech</span>
+        </div>
+        <nav class="d-flex">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="./Estadisticas.html">Estadísticas</a>
+            <a class="nav-link" href="./SobreNosotros.html">Sobre nosotros</a>
+            <a class="nav-link" href="../HTML/contacto.html">Contacto</a>
+        </nav>
+        <img src="../IMG/Logoufpso.png" alt="" width="200px">
+    </header>
+    <br><br><br>
+    
+    <main class="inventario">
+
+        <!-- Sección de Alimentos -->
+        <section class="card">
+            <h2>Inventario de Alimentos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Alimento</th>
+                        <th>Cantidad Disponible (kg)</th>
+                        <th>Última Fecha de Actualización</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pastura</td>
+                        <td>5000 kg</td>
+                        <td>01/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Suplemento Mineral</td>
+                        <td>800 kg</td>
+                        <td>01/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Alfalfa</td>
+                        <td>1500 kg</td>
+                        <td>01/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Concentrado Especial</td>
+                        <td>1200 kg</td>
+                        <td>01/11/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Animales por Proyecto -->
+        <section class="card">
+            <h2>Inventario de Animales por Proyecto</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Tipo de Animal</th>
+                        <th>Número de Animales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bovino Criollo - Potrero</td>
+                        <td>Ganado Bovino</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Bovino Lechero - Potrero</td>
+                        <td>Ganado Bovino</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto Cunícula - Suplementación Especial</td>
+                        <td>Conejos</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto Piscícola - Suplementación Especial</td>
+                        <td>Peces</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto Caprino - Potrero</td>
+                        <td>Cabras</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto Avícola - Suplementación Especial</td>
+                        <td>Aves</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Proyecto Porcino - Suplementación Especial</td>
+                        <td>Cerdos</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Consumo Total -->
+        <section class="card">
+            <h2>Total de Alimentos Consumidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Alimento</th>
+                        <th>Total Consumido (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pastura</td>
+                        <td>2000 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Suplemento Mineral</td>
+                        <td>300 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Alfalfa</td>
+                        <td>700 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Concentrado Especial</td>
+                        <td>500 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Inventario actualizado al 01/11/2024 | Proyecto de Ingeniería de Sistemas</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f1b2ade254.js" crossorigin="anonymous"></script>
+</body>
+</html>

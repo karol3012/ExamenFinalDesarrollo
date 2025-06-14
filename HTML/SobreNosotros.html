@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones de Uso</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+        .full-screen {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        .card {
+            width: 100%;
+            max-width: 900px;
+        }
+        .header {
+            background-color: rgb(255, 0, 0);
+            padding: 20px;
+        }
+        .nav-link{
+            color: black;
+        }
+        .nav-link {
+            margin: 0 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        span{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-cogs"></i>
+            <span class="ml-2">Ganotech</span>
+        </div>
+        <nav class="d-flex">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="./Estadisticas.html">Estadísticas</a>
+            <a class="nav-link" href="./SobreNosotros.html">Sobre nosotros</a>
+            <a class="nav-link" href="../HTML/contacto.html">Contacto</a>
+        </nav>
+        <img src="../IMG/Logoufpso.png" alt="" width="200px">
+    </header>
+    <div class="full-screen">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Bienvenido a Ganotech</h5>
+                <p class="card-text">Para navegar por nuestro sitio, siga estos pasos:</p>
+                <ol>
+                    <li>Utilice el menú de navegación en la parte superior para acceder a diferentes secciones.</li>
+                    <li>Inicie seción en la pagina para acceder a todos los beneficios que ofrecemos.</li>
+                    <li>Haga clic en los botones "Ingresar" para usar los diferentes servicios que ofrece nuestra pagina web.</li>
+                    <li>Cuando ingrese los datos asegurese que sean los solicitados para que el sistema funcione correctamente</li>
+                    <li>Si necesita ayuda mas especifica, visite la sección de contacto.</li>
+                </ol>
+                <p class="card-text">¡Esperamos que disfrute su experiencia!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f1b2ade254.js" crossorigin="anonymous"></script>
+</body>
+</html>
