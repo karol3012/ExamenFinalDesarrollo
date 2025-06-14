@@ -230,3 +230,72 @@ input{
     height: 40px;
     width: 40px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .form-container,
+  .sign-in-container,
+  .sign-up-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
+    animation: none !important;
+  }
+
+  .overlay-container {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-size: 11px;
+  }
+
+  input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .social-container {
+    flex-direction: column;
+  }
+
+  .social-container a {
+    margin: 5px 0;
+  }
+}
