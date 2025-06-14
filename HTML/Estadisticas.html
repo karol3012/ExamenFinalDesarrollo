@@ -169,16 +169,14 @@ select:focus {
   border-radius: 8px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 
-  /* Centrado en la página */
-  margin: 30px auto; /* Ajusta el margen superior aquí */
+ 
+  margin: 30px auto; 
 }
 
 .table-container h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #000000;
-    /* align-items: center; */
-    
+    color: #000000; 
 }
 
 table {
@@ -200,10 +198,10 @@ th {
     color: #ffffff;
 }
 table tr:nth-child(even) td {
-    background-color: #f3f3f3; /* Alternancia de color en las filas */
+    background-color: #f3f3f3; 
 }
 .selectors {
-    /* padding: 20px; */
+    
     margin-bottom: 20px;
 }
 .card {
@@ -276,7 +274,7 @@ table tr:nth-child(even) td {
   }
 }
 
-/* 📲 Responsivo extra para móviles pequeños (≤ 480px) */
+
 @media (max-width: 480px) {
   .stats-section h2 {
     font-size: 1.5em;
@@ -331,7 +329,7 @@ table tr:nth-child(even) td {
         <h2>Estadísticas de Contabilidad de Alimentos</h2>
         <p class="description">Análisis detallado del consumo y costos de alimentos para el ganado.</p>
     
-        <!-- Tarjetas de estadísticas -->
+        
         <div class="stats-container">
             <div class="stat-card">
                 
@@ -354,15 +352,15 @@ table tr:nth-child(even) td {
             </div>
         </div>
     
-        <!-- Gráficos -->
+        
         <div class="charts">
-            <!-- Gráfico de barras -->
+            
             <div class="chart-container">
                 <h3>Consumo de Alimento por Mes</h3>
                 <canvas id="barChart"></canvas>
             </div>
     
-            <!-- Gráfico de líneas comparativo -->
+            
             
             <div class="card">
                 <h4>Gráfico de Consumo Mensual</h4>
@@ -395,7 +393,7 @@ table tr:nth-child(even) td {
             </div>
         
                <script>
-                // Datos de consumo mensual de ejemplo
+                
                 const consumoData = {
                     bovinoCriollo: 500,
                     bovinoLechero: 700,
@@ -406,7 +404,7 @@ table tr:nth-child(even) td {
                     cerdos: 600
                 };
         
-                // Función para obtener el nombre del animal según la opción seleccionada
+                
                 function getAnimalName(key) {
                     const names = {
                         bovinoCriollo: "Bovino Criollo",
@@ -420,7 +418,7 @@ table tr:nth-child(even) td {
                     return names[key];
                 }
         
-                // Función para actualizar el gráfico con los animales seleccionados
+                
                 function updateChart() {
                     const animal1Key = document.getElementById('animal1').value;
                     const animal2Key = document.getElementById('animal2').value;
@@ -430,7 +428,7 @@ table tr:nth-child(even) td {
                     consumoChart.update();
                 }
         
-                // Configuración inicial del gráfico
+                
                 const ctx = document.getElementById('consumoChart').getContext('2d');
                 const consumoChart = new Chart(ctx, {
                     type: 'bar',
@@ -458,13 +456,13 @@ table tr:nth-child(even) td {
                     }
                 });
         
-                // Añadir event listeners a los selectores para actualizar el gráfico
+                
                 document.getElementById('animal1').addEventListener('change', updateChart);
                 document.getElementById('animal2').addEventListener('change', updateChart);
             </script>
         </div>
     
-        <!-- Tabla de datos -->
+        
         <div class="table-container">
             <h3>Resumen de Costos Mensuales</h3>
             <table>
@@ -541,9 +539,9 @@ table tr:nth-child(even) td {
         </div>
     </section>
     
-    <!-- JavaScript para inicializar los gráficos -->
+   
     <script>
-    // Gráfico de barras
+    
     const barCtx = document.getElementById('barChart').getContext('2d');
     new Chart(barCtx, {
         type: 'bar',
