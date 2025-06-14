@@ -41,6 +41,50 @@
         span{
             color: #000;
         }
+
+        @media (max-width: 768px) {
+  .full-screen {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .card {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* 📲 Extra responsivo para móviles pequeños */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 5px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
     </style>
 </head>
 <body>
