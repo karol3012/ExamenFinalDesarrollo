@@ -139,6 +139,88 @@ table tr:nth-child(even) td {
     background-color: #f3f3f3; /* Alternancia de color en las filas */
 }
 
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #animal-form input,
+    #animal-form button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+
+    #historial-container {
+        padding: 15px;
+    }
+
+    .charts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .charts canvas {
+        width: 100% !important;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* 🧾 Ajustes extra para móviles muy pequeños (≤ 480px) */
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 14px;
+    }
+
+    #animal-form input,
+    #animal-form button {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .charts {
+        gap: 10px;
+    }
+
+    .charts canvas {
+        height: 180px; /* Altura más manejable */
+    }
+}
     </style>
 </head>
 <body>
@@ -196,7 +278,7 @@ table tr:nth-child(even) td {
         // Datos aleatorios para generar historial
         function generarHistorialAleatorio() {
             const historial = [];
-            const fechas = ["01/10/2024", "15/10/2024", "01/11/2024", "15/11/2024", "01/12/2024"];
+            const fechas = ["01/06/2025", "15/05/2025", "01/06/2025", "15/05/2025", "01/06/2025"];
             for (let i = 0; i < fechas.length; i++) {
                 historial.push({
                     fecha: fechas[i],
