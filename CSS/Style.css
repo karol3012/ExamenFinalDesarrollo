@@ -115,5 +115,43 @@ h2{
     height: 220px;
     opacity: 1;
   }
+
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .animated-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Teléfonos móviles */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .animated-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 8px;
+    }
+}
+
   
   
