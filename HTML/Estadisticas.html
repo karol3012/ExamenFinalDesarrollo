@@ -219,6 +219,97 @@ table tr:nth-child(even) td {
     margin-bottom: 20px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .stats-section h2 {
+    font-size: 1.8em;
+  }
+
+  .stats-section .description {
+    font-size: 1em;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .charts,
+  .table-container,
+  .chart-container,
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .chart-container h3,
+  .table-container h3,
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* 📲 Responsivo extra para móviles pequeños (≤ 480px) */
+@media (max-width: 480px) {
+  .stats-section h2 {
+    font-size: 1.5em;
+  }
+
+  .stats-section .description {
+    font-size: 0.9em;
+  }
+
+  .stat-card h3 {
+    font-size: 1em;
+  }
+
+  .stat-card p {
+    font-size: 1.5em;
+  }
+
+  .chart-container h3,
+  .table-container h3,
+  .card h2 {
+    font-size: 1.1em;
+  }
+
+  th, td {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  select {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
             
 </style>
 <body>
